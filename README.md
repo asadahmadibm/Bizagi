@@ -8,6 +8,23 @@
      تخصیص کاربران
     مرحله integration
     اجرا
+## Help Table
+
+     WFCLASS درخواست مرخصی
+     WORKFLOW  ->   TASK   اجزای ورک فلو
+     
+     WFCASE رکوردهای ثبت درخواست
+     1- after define process insert record in WFCLASS then insert record in WORKFLOW as version
+     2- define task insert records in TASK
+     3- define data model insert in ATTRIB and Make Entity LeaveRequest
+     4- define form 
+     3- user fill form insert record in WFCASE and WORKITEM  and LeaveRequest
+     4- after each step insert to   WORKITEM and pre record in update to Completed state
+     5- important table
+     WORKITEMSTATE
+     BABIZAGICATALOG
+     vwBA_Catalog3_BABIZAGICAT_ALL
+
 
  ## Font farsi iranyekan
          copy asset directory from source-rtl
