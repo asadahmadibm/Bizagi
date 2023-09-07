@@ -25,6 +25,11 @@
      BABIZAGICATALOG
      vwBA_Catalog3_BABIZAGICAT_ALL
 
+## Tools
+     Devexpress
+     telerik
+     hangfire
+
 
  ## Font farsi iranyekan
          copy asset directory from source-rtl
