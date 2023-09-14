@@ -55,7 +55,9 @@
      --------------------------------------------------------
 ## https://desktop-3kqcogv/HRBizagi/odata/data/cases?$top=2&$skip=0&$count=true 
      or
-     https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
+## https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
+	or
+ ## https://desktop-3kqcogv/HRBizagi/odata/data/processes
      Headers : Keys value :
      Content-Type Bearer 144eb417290721e30405267c5167678e28ae62be841726efe25e30abe3b0e338
      Authorization application/json
