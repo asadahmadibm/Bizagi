@@ -37,8 +37,8 @@
      2. Get the authorization token
           2-1 : Encode [Client Id]:[Client Secret] with base64 in https://www.base64encode.org/,
           2-2 : Open the Postman
-          
- ##    https://desktop-3kqcogv/HRBizagi/oauth2/server/token
+     -------------------------------------------------------------------------------------------
+    https://desktop-3kqcogv/HRBizagi/oauth2/server/token
      Headers : Keys value :
      Content-Type Basic ZTkzNzUxY2EzMGUzYTZkYTk4ODg5N2FkZWRjYzhkMGE4ODA3YTc2M2U1ZGQxN2RlYzNkYzYzMDk2NWQxODI0ODphMTA0Yjg4NDE2Yjg3N2NhZTg0ZTc3YzBlMmM5NmE5Mjc1OGMyY2I4YTNkYTIwZGQ0ZjYwMDAwZThiMWE2MWM5
      Authorization application/x-www-form-urlencoded
@@ -53,11 +53,11 @@
          "http_status_code": 200
      }
      --------------------------------------------------------
-## https://desktop-3kqcogv/HRBizagi/odata/data/cases?$top=2&$skip=0&$count=true 
-     or
-## https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
-	or
- ## https://desktop-3kqcogv/HRBizagi/odata/data/processes
+    https://desktop-3kqcogv/HRBizagi/odata/data/cases?$top=2&$skip=0&$count=true 
+    https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
+    https://desktop-3kqcogv/HRBizagi/odata/data/processes
+    https://desktop-3kqcogv/HRBizagi/odata/data/searchByCaseNumber(caseNumber='10')
+    
      Headers : Keys value :
      Content-Type Bearer 144eb417290721e30405267c5167678e28ae62be841726efe25e30abe3b0e338
      Authorization application/json
