@@ -118,6 +118,44 @@
         }
     ]
 }
+--------------------------------------------------------------------------------
+	Send Master Detail
+	{
+	  "startParameters": [
+	       {
+	           "xpath": "MyProcessEntity.MyCollection",
+	           "type": "collection",
+	           "rows": [
+	                         {
+	                   "columns": [
+	                         {
+	                          "xpath": "FullName",
+	                           "value": "Juliette Leroy"
+	                       },
+	                       {
+	                           "xpath": "Income",
+	                           "value": "300000"
+	                       }
+	                   ]
+	               },
+	               {
+	                   "columns": [
+	                         {
+	                           "xpath": "FullName",
+	                           "value": "Piotr Blanter"
+	                       },
+	                       {
+	                           "xpath": "Income",
+	                           "value": "300000"
+	                       }
+	                   ]
+	              }
+	           ]
+	       }
+	   ]
+	}
+
+ 
 
  ## Font farsi iranyekan
          copy asset directory from source-rtl
