@@ -29,7 +29,93 @@
      Devexpress
      telerik
      hangfire
+## API Refrence
 
+     We recommend you enable API to grant access so you can make full use of the OData services.
+	
+     1-Register an OAuth application -> Work Portal -> Admin>Security -> OAuth2 Applications -> Add grant access to an external application
+     2. Get the authorization token
+          2-1 : Encode [Client Id]:[Client Secret] with base64 in https://www.base64encode.org/,
+          2-2 : Open the Postman
+          
+ ##    https://desktop-3kqcogv/HRBizagi/oauth2/server/token
+     Headers : Keys value :
+     Content-Type Basic ZTkzNzUxY2EzMGUzYTZkYTk4ODg5N2FkZWRjYzhkMGE4ODA3YTc2M2U1ZGQxN2RlYzNkYzYzMDk2NWQxODI0ODphMTA0Yjg4NDE2Yjg3N2NhZTg0ZTc3YzBlMmM5NmE5Mjc1OGMyY2I4YTNkYTIwZGQ0ZjYwMDAwZThiMWE2MWM5
+     Authorization application/x-www-form-urlencoded
+      Body tab -> raw in Text -> grant_type=client_credentials&scope=api
+     return
+     
+     {
+         "access_token": "144eb417290721e30405267c5167678e28ae62be841726efe25e30abe3b0e338",
+         "token_type": "bearer",
+         "expires_in": 1073001600,
+         "scope": "api openid",
+         "http_status_code": 200
+     }
+     --------------------------------------------------------
+## https://desktop-3kqcogv/HRBizagi/odata/data/cases?$top=2&$skip=0&$count=true 
+     or
+     https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
+     Headers : Keys value :
+     Content-Type Bearer 144eb417290721e30405267c5167678e28ae62be841726efe25e30abe3b0e338
+     Authorization application/json
+
+     return
+
+     {
+    "@odata.context": "https://desktop-3kqcogv/HRBizagi/odata/data/$metadata#cases(10)",
+    "@odata.id": "https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)",
+    "@processEntityKey": "25cae22b-6ed4-40d8-bbcc-ac95289ce884",
+    "id": 10,
+    "caseNumber": "10",
+    "creationDate": "2023-09-07T16:05:49+03:30",
+    "estimatedSolutionDate": "2023-09-15T16:05:49+03:30",
+    "solutionDate": null,
+    "processName": "درخواست مرخصی",
+    "closed": false,
+    "parameters": [
+        {
+            "xpath": "actionDate",
+            "value": ""
+        },
+        {
+            "xpath": "attachment",
+            "files": []
+        },
+        {
+            "xpath": "description",
+            "value": "dddddddddd"
+        },
+        {
+            "xpath": "endDate",
+            "value": "2023-09-08T00:00:00"
+        },
+        {
+            "xpath": "HrSaveDate",
+            "value": ""
+        },
+        {
+            "xpath": "isOk",
+            "value": null
+        },
+        {
+            "xpath": "mandeh",
+            "value": null
+        },
+        {
+            "xpath": "requestDate",
+            "value": "2023-09-07T16:05:49"
+        },
+        {
+            "xpath": "requestDescution.name",
+            "value": null
+        },
+        {
+            "xpath": "startDate",
+            "value": "2023-09-09T00:00:00"
+        }
+    ]
+}
 
  ## Font farsi iranyekan
          copy asset directory from source-rtl
