@@ -24,6 +24,25 @@
      WORKITEMSTATE
      BABIZAGICATALOG
      vwBA_Catalog3_BABIZAGICAT_ALL
+## All Entiry :
+       "type": "Master",
+			"name": "LeaveRequest",
+	 "type": "Enum",
+			"name": "LeaveDiscution",
+	 "type": "Application",
+            "name": "App",
+     "type": "System",
+            "name": "WFUSER",
+            "name": "LOCATION",
+            "name": "AREA",
+            "name": "ROLE",
+            "name": "SKILL",
+            "name": "ORGPOSITION",
+            "name": "WORKINGTIMESCHEMA",
+            "name": "ORG",
+            "name": "BATIMEZONE",
+            "name": "LANGUAGE",
+            "name": "USERSTARTPAGE",
 
 ## Tools
      Devexpress
