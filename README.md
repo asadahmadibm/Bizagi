@@ -59,8 +59,8 @@
      -------------------------------------------------------------------------------------------
     https://desktop-3kqcogv/HRBizagi/oauth2/server/token
      Headers : Keys value :
-     Content-Type Basic ZTkzNzUxY2EzMGUzYTZkYTk4ODg5N2FkZWRjYzhkMGE4ODA3YTc2M2U1ZGQxN2RlYzNkYzYzMDk2NWQxODI0ODphMTA0Yjg4NDE2Yjg3N2NhZTg0ZTc3YzBlMmM5NmE5Mjc1OGMyY2I4YTNkYTIwZGQ0ZjYwMDAwZThiMWE2MWM5
-     Authorization application/x-www-form-urlencoded
+     Content-Type application/x-www-form-urlencoded
+     Authorization Basic ZTkzNzUxY2EzMGUzYTZkYTk4ODg5N2FkZWRjYzhkMGE4ODA3YTc2M2U1ZGQxN2RlYzNkYzYzMDk2NWQxODI0ODphMTA0Yjg4NDE2Yjg3N2NhZTg0ZTc3YzBlMmM5NmE5Mjc1OGMyY2I4YTNkYTIwZGQ0ZjYwMDAwZThiMWE2MWM5
       Body tab -> raw in Text -> grant_type=client_credentials&scope=api
      return
      
