@@ -53,6 +53,7 @@
          "http_status_code": 200
      }
      --------------------------------------------------------
+    https://desktop-3kqcogv/HRBizagi/odata/query/entity -> no body
     https://desktop-3kqcogv/HRBizagi/odata/data/cases?$top=2&$skip=0&$count=true 
     https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
     https://desktop-3kqcogv/HRBizagi/odata/data/processes
