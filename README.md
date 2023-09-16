@@ -48,6 +48,10 @@
      Devexpress
      telerik
      hangfire
+## Security Menu & Entiry
+	به قسمت bizagi studio -> expert -> security->authorization  رفته و برای منوها روی page رفته و به رول یا گروهی ان دسترسی را میدهیم
+ 	برای دادن یک رول به کاربر به پورتال رفته و منوی admin->user managment -> profile رفته و میتوان assign کنیم
+  	برای تعریف رول جدید نیز به bizagi studio-> Expert ->organization  میرویم و رول را تعریف میکنیم
 ## API Refrence
 
      We recommend you enable API to grant access so you can make full use of the OData services.
@@ -72,11 +76,19 @@
          "http_status_code": 200
      }
      --------------------------------------------------------
-    https://desktop-3kqcogv/HRBizagi/odata/query/entity -> no body
+    https://desktop-3kqcogv/HRBizagi/odata/query/entity -> no body    کل جداول در بالا لیست ان امده 
+    https://desktop-3kqcogv/HRBizagi/odata/data/entities     فقط جداولی که این کاربر دسترسی دارد
+    https://desktop-3kqcogv/HRBizagi/odata/data/entities(0c2f0805-ff63-4b2b-b078-ec192f86784a)/values
+    https://desktop-3kqcogv/HRBizagi/odata/query/executeEntityQuery  -> body     {"QueryParameter": {"entity": "leaverequest"}}
+    https://desktop-3kqcogv/HRBizagi/odata/data/cases
     https://desktop-3kqcogv/HRBizagi/odata/data/cases?$top=2&$skip=0&$count=true 
     https://desktop-3kqcogv/HRBizagi/odata/data/cases(10)
     https://desktop-3kqcogv/HRBizagi/odata/data/processes
+    
+    https://desktop-3kqcogv/HRBizagi/odata/data/queries
+    https://desktop-3kqcogv/HRBizagi/odata/data/queries(2a725747-7a5d-42e5-a17f-3daa7dbff0a6)/executeQuery      body -> {"startParameters": []}
     https://desktop-3kqcogv/HRBizagi/odata/data/searchByCaseNumber(caseNumber='10')
+    
     
      Headers : Keys value :
      Content-Type Bearer 144eb417290721e30405267c5167678e28ae62be841726efe25e30abe3b0e338
